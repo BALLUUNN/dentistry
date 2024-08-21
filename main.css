@@ -640,3 +640,69 @@ img { pointer-events: none; }
     background-color: #2E3192;
     color: #fff;
 }
+.registerPopup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #939393;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+}
+.registerContainer {
+    height: 1000px;
+    width: 550px;
+    background-color: #fff;
+    margin-top: 5%;
+    border-radius: 25px;
+    color: #2E3192;
+    display: flex;
+    flex-direction: column;
+}
+.loginName {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+.formLogIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputEmail {
+    margin-bottom: 30px;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: #2E3192 solid 2px;
+}
+.inputEmail:focus {
+    outline: none;
+}
+.inputPassword {
+    margin-bottom: 70px;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: #2E3192 solid 2px;
+}
+.inputPassword:focus {
+    outline: none;
+}
+.outWebLogIn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logInWith {
+    font-weight: 550;
+    font-size: 26px;
+    
+}

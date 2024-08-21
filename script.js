@@ -74,7 +74,7 @@ document.querySelector('.search').oninput = function() {
     } else {
         defWrong.classList.remove('active')  
     }
-    }, 300)
-    
+    }, 200)
+
 }
 
