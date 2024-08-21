@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    <div class="divPreload">
+        <span class="loader"></span>
+    </div>
+
     <div id="intro" class="intro">
 <div class="sub-header">
             <div class="pop">
@@ -36,7 +40,6 @@
                     </div>
             </div>
         </div>
-
 
 
 
@@ -367,30 +370,45 @@
 
 
             <div class="loginName">Log in</div>
-
+<hr class="hrLog">
             <form action="">
                 <div class="formLogIn">
 
                    
-                        <label style="font-weight: 550;font-size: 22px; margin-bottom: 5px;" for="enterEmail">Email</label>
+                        <label class="forInputEmail" for="enterEmail">Email</label>
                         <input class="inputEmail" id="enterEmail" type="email" placeholder="Enter your email...">
                    
                     
 
                     
-                        <label style="font-weight: 550;font-size: 22px;margin-bottom: 5px;" for="EnterPassword">Password</label>
+                        <label class="forInputPassword" for="EnterPassword">Password</label>
                         <input class="inputPassword" type="text" id="EnterPassword" placeholder="Enter your password...">
 
                     
                 </div>  
             </form>
-            
+
+            <hr style="margin-bottom: 35px;" class="hrLog">
 
             <div class="outWebLogIn">
 
                 <div class="logInWith">
                     Log in with:
                 </div>
+
+                <div class="outWebLogInPart">
+
+                <a href="https://vk.com/" class="vkLink">
+                    <div class="vk">
+                        <img src="" alt="" class="vlImg">
+                        <p>f</p>
+                    </div> 
+                </a>
+
+
+
+                </div>
+                
 
             </div>
 

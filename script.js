@@ -10,12 +10,13 @@ document.querySelector('.burger_menu').addEventListener('click', () => {
     if (document.querySelector('.sitebar.active') === null) {
         siteBarList.forEach(el => {
             el.classList.add('active')
-        })
+        });
 
-        sitebar.classList.remove('defoult')
+        sitebar.classList.remove('defoult');
+
         if (document.querySelector('.header.defoult') !== null) {
             header.classList.remove('defoult')
-        }
+        };
 
     } else {
         siteBarList.forEach(el => {
@@ -76,5 +77,10 @@ document.querySelector('.search').oninput = function() {
     }
     }, 200)
 
-}
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.querySelector('.divPreload');
+    preloader.style.display = 'none';
+})
 

@@ -8,6 +8,35 @@ body {
     max-width: 100%;
     cursor: default;
 }
+.divPreload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000;
+}
+.loader {
+    width: 108px;
+    height: 108px;
+    border: 10px solid  #2E3192;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
 img { pointer-events: none; }
 ::-webkit-scrollbar {
     width: 6px;
@@ -665,7 +694,7 @@ img { pointer-events: none; }
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-size: 36px;
 }
 .formLogIn {
@@ -674,21 +703,23 @@ img { pointer-events: none; }
     align-items: center;
 }
 .inputEmail {
-    margin-bottom: 30px;
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 26px;
+    border-radius: 3px;
     outline: none;
     border: #2E3192 solid 2px;
+    font-size: 20px;
 }
 .inputEmail:focus {
     outline: none;
 }
 .inputPassword {
-    margin-bottom: 70px;
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 35px;
+    width: 350px;
+    height: 26px;
+    border-radius: 3px;
     outline: none;
     border: #2E3192 solid 2px;
 }
@@ -704,5 +735,21 @@ img { pointer-events: none; }
 .logInWith {
     font-weight: 550;
     font-size: 26px;
-    
+}
+.forInputEmail {
+    font-weight: 550;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.forInputPassword {
+    font-weight: 550;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.hrLog {
+    width: 350px;
+    height: 2px;
+    background-color: #2E3192;
+    opacity: 0.4;
+    margin-bottom: 25px;
 }
