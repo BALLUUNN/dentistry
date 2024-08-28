@@ -56,10 +56,11 @@ img { pointer-events: none; }
     left: 0;
 }
 .pop {
-    max-width: 90%;
+    max-width: 99%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     height: 40px;
 }
@@ -123,8 +124,8 @@ img { pointer-events: none; }
     }
 }
 .logo {
-    width: 175px;
-    height: 22px;
+    width: calc(105px + 70 * (100vw/2560));
+    height: calc(16px + 6 * (100vw/2560));
 }
 .headerCenter {
     display: flex;
@@ -264,43 +265,62 @@ img { pointer-events: none; }
 .time-work {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(15px + 35 * (100vw / 2560));
 }
 .timeImg {
-    width: 21px;
-    height: 21px;
-    margin-right: 10px;
-    align-self: flex-start;
+    width: calc(15px + 6 * (100vw / 2560));
+    height: calc(15px + 6 * (100vw / 2560));
+    margin-right: 5px;
+
+    margin-left: calc(15px + 35 * (100vw / 2560));
 }
 .timetext {
     max-height: 18px;
+    font-size: calc(11px + 5 * (100vw / 2560));
+    align-self: flex-end;
+    padding: 0;
 }
 .num {
     display: flex;
-    margin-right: 50px;
+    margin-right: calc(15px + 35 * (100vw / 2560));
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
+.numtext {
+    font-size: calc(11px + 5 * (100vw / 2560));
 }
 .numImg {
-    width: 20px;
-    height: 20px;
+    width: calc(16px + 3 * (100vw / 2560));
+    height: calc(16px + 3 * (100vw / 2560));
     margin-right: 5px;
+    /* margin-bottom: 3px; */
+    padding-bottom: 3px;
 }
 .mail {
     display: flex;
-    margin-right: 50px;
+    margin-right: calc(15px + 35 * (100vw / 2560));
     justify-content: center;
+    align-items: center;
+}
+.mailText {
+    padding-top: 2px;
+    font-size: calc(11px + 5 * (100vw / 2560));
 }
 .mailImg {
-    width: 25px;
-    height: 20px;
+    width: calc(19px + 6 *(100vw/2560));
+    height: calc(16px + 4 *(100vw/2560));
     margin-right: 5px;
 }
 .adres {
     display: flex;
-    margin-right: 50px;
+    margin-right: calc(15px + 35 * (100vw / 2560));
     justify-content: center;
     align-items: flex-end;
+}
+.adresText {
+    font-size: calc(11px + 5 * (100vw / 2560));
 }
 .adresImg {
     width: 20px;
@@ -523,9 +543,9 @@ img { pointer-events: none; }
     margin-left: 5px;
 }
 .search {
-    width: 250px;
+    width: calc(150px + 100 * (100vw / 2560));
     height: 25px;
-    margin-right: 100px;
+    margin-right: calc(40px + 60*(100vw / 2560));
     align-self: center;
     border: 2px solid #2E3192;
     font-size: 18px;
@@ -572,6 +592,9 @@ img { pointer-events: none; }
     justify-content: center;
     align-self: center;
     text-transform: capitalize;
+}
+.def:hover {
+    background-color: #e1e1e1;
 }
 .def.active {
     display: flex;
@@ -632,7 +655,7 @@ img { pointer-events: none; }
     background-color: #e1e1e1;
 }
 .userInfo {
-    margin-right: 100px;
+    margin-right: calc(40px + 60*(100vw / 2560));
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -643,7 +666,7 @@ img { pointer-events: none; }
     background-color: transparent;
     width: 70px;
     border: 1px solid #2E3192;
-    margin-right: 20px;
+    margin-right: calc(12px + 8*(100vw / 2560));
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -677,7 +700,7 @@ img { pointer-events: none; }
     height: 100vh;
     background-color: #939393;
     opacity: 0.9;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .registerContainer {
@@ -752,4 +775,9 @@ img { pointer-events: none; }
     background-color: #2E3192;
     opacity: 0.4;
     margin-bottom: 25px;
+}
+@media (max-width:932px) {
+    .pop {
+        height: 60px;
+    }
 }
