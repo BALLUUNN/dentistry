@@ -700,7 +700,7 @@ img { pointer-events: none; }
     height: 100vh;
     background-color: #939393;
     opacity: 0.9;
-    display: none;
+    display: flex;
     justify-content: center;
 }
 .registerContainer {
@@ -775,6 +775,21 @@ img { pointer-events: none; }
     background-color: #2E3192;
     opacity: 0.4;
     margin-bottom: 25px;
+}
+.registerBtn {
+    text-transform: uppercase;
+    padding: 7px 17px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #2E3192;
+    transition: .2s linear;
+}
+.registerBtn:hover {
+    color: #e1e1e1;
+    background-color: #07124d;
 }
 @media (max-width:932px) {
     .pop {
